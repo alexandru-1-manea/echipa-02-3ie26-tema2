@@ -1,4 +1,5 @@
 Structura Echipei și Distribuția Sarcinilor
+
 Manea Alexandru (Lead Developer & DevOps)
 
 Configurarea repository-ului pe GitHub.
