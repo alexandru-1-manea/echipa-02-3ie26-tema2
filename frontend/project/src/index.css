@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: oklch(0.9559 0.0146 102.4588);
+    --foreground: oklch(0 0 0);
+    --card: oklch(0.9559 0.0146 102.4588);
+    --card-foreground: oklch(0 0 0);
+    --popover: oklch(1.0000 0 0);
+    --popover-foreground: oklch(0 0 0);
+    --primary: oklch(0.6268 0.2325 303.9004);
+    --primary-foreground: oklch(1.0000 0 0);
+    --secondary: oklch(0.7217 0.1767 305.5038);
+    --secondary-foreground: oklch(0 0 0);
+    --muted: oklch(0.9255 0.0160 102.8419);
+    --muted-foreground: oklch(0.5103 0 0);
+    --accent: oklch(0.6268 0.2325 303.9004);
+    --accent-foreground: oklch(1.0000 0 0);
+    --destructive: oklch(0.6730 0.2146 25.0397);
+    --destructive-foreground: oklch(1.0000 0 0);
+    --border: oklch(0 0 0);
+    --input: oklch(1.0000 0 0);
+    --ring: oklch(0.6268 0.2325 303.9004);
+    --radius: 2rem;
+    --tracking-normal: -0.01em;
+  }
+
+  .dark {
+    --background: oklch(0.1822 0 0);
+    --foreground: oklch(0.9559 0.0146 102.4588);
+    --card: oklch(0.2393 0 0);
+    --card-foreground: oklch(0.9559 0.0146 102.4588);
+    --popover: oklch(0.2393 0 0);
+    --popover-foreground: oklch(0.9559 0.0146 102.4588);
+    --primary: oklch(0.6268 0.2325 303.9004);
+    --primary-foreground: oklch(1.0000 0 0);
+    --secondary: oklch(0.2850 0 0);
+    --secondary-foreground: oklch(0.9559 0.0146 102.4588);
+    --muted: oklch(0.2850 0 0);
+    --muted-foreground: oklch(0.7058 0 0);
+    --accent: oklch(0.6268 0.2325 303.9004);
+    --accent-foreground: oklch(1.0000 0 0);
+    --destructive: oklch(0.3767 0.1546 29.2339);
+    --destructive-foreground: oklch(1.0000 0 0);
+    --border: oklch(0.3211 0 0);
+    --input: oklch(0.2393 0 0);
+    --ring: oklch(0.6268 0.2325 303.9004);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    letter-spacing: var(--tracking-normal);
+  }
+}
