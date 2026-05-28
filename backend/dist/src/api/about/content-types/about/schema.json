@@ -1,0 +1,33 @@
+{
+    "kind": "singleType",
+    "collectionName": "abouts",
+    "info": {
+        "singularName": "about",
+        "pluralName": "abouts",
+        "displayName": "About"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": false
+        }
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "detailedDescription": {
+            "type": "blocks"
+        },
+        "profileImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        }
+    }
+}
